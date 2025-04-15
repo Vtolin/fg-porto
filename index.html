@@ -1,23 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pasha</title>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasha</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      width: 100%;
+      font-family: Arial, sans-serif;
+    }
+    .top {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+    }
+    .cemg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; /* So elements on top can be visible */
+    }
+    .overlay-content {
+      position: relative;
+      color: white;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+    }
 
-    </style>
+    ::-webkit-scrollbar {
+        width: 5px;
+        background-color: #333;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: black;
+        border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-    <div class="top">
-        <img src="" alt="EOS 70D">
+  <div class="top">
+    <img src="70d.jpeg" alt="EOS 70D" class="cemg">
+    
+    <div class="overlay-content">
+      <h1>Wildna</h1>
+      <p>Photography is a way of feeling, of touching, of loving.</p>
+    </div>
+  </div>
 
-    </div>
-    <div class="body">
-        <h1></h1>
-    </div>
+  <div>
+  </div>
 </body>
-<script>
-
-</script>
 </html>
