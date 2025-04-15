@@ -26,6 +26,7 @@
       height: 60px;
       background-color: rgba(0, 0, 0, 0.4);
       backdrop-filter: blur(10px);
+      border-bottom: 2px solid red;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -34,7 +35,7 @@
     }
 
     .logo {
-      color: red;
+      color: rgb(239, 216, 0);
       font-size: 20px;
       font-weight: bold;
     }
@@ -85,6 +86,7 @@
     }
 
     .overlay-content p {
+      margin: 0 20px;
       font-size: 1.1rem;
       padding: 10px 20px;
       background: rgba(255, 255, 255, 0.1);
@@ -95,36 +97,50 @@
     }
 
     .about-me {
-      background-color: #f9f9f9;
-      padding: 80px 20px;
-      display: flex;
-      justify-content: center;
-    }
+  background-color: #f9f9f9;
+  padding: 100px 40px;
+  display: flex;
+  justify-content: center;
+}
 
-    .about-me-container {
-      display: flex;
-      max-width: 1000px;
-      align-items: center;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
+.about-me-container {
+  display: flex;
+  max-width: 1200px; /* Increased from 1000px */
+  width: 100%;
+  align-items: center;
+  gap: 60px; /* More breathing space */
+  flex-wrap: wrap;
+}
 
-    .about-text {
-      flex: 1;
-      min-width: 280px;
-    }
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
 
-    .about-text h1 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-      color: #111;
-    }
+.about-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #111;
+}
 
-    .about-text p {
-      font-size: 1.1rem;
-      color: #555;
-      line-height: 1.6;
-    }
+.about-text p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-text .fas {
+  color: green;
+  margin-right: 10px;
+}
+
+.about-text div {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
 
     .about-image {
       flex: 1;
@@ -148,13 +164,23 @@
     }
 
     .portfolio-items {
-      display: grid;
+        display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
       gap: 10px;
     }
     .portfolio h2 {
       text-align: center;
       font-size: 2rem;
       margin-bottom: 30px;
+    }
+
+    .portfolio-items img {
+      width: 200px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
     }
 
     ::-webkit-scrollbar {
@@ -191,7 +217,11 @@
       <div class="about-text">
         <h1>Hello, I'm Wildan, a professional photographer based in Indonesia</h1>
         <p>I capture moments with a focus on creativity and precision, often using budget gear to its fullest potential.</p>
-      </div>
+
+<div><i class="fas fa-circle-check"></i> 3 Years of Experience</div>
+<div><i class="fas fa-circle-check"></i> E-mail: hafidzywildan@gmail.com</div>
+
+    </div>
       <div class="about-image">
         <img src="artisclg.jpeg" alt="Wildan" class="pfp" />
       </div>
@@ -201,7 +231,13 @@
     <div class="portfolio">
         <h2>My Portfolio</h2>
         <div class="portfolio-items">
-
+            <img src="portoimg/tr1.jpeg" alt="train-images">
+            <img src="portoimg/tr2.jpeg" alt="train-images">
+            <img src="portoimg/tr3.jpeg" alt="train-images">
+            <img src="portoimg/tr4.jpeg" alt="train-images">
+            <img src="portoimg/tr5.jpeg" alt="train-images">
+            <img src="portoimg/tr6.jpeg" alt="train-images">
+            <img src="portoimg/tr7.jpeg" alt="train-images">
         </div>
     </div>
 </body>
