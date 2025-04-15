@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pasha</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     * {
       margin: 0;
@@ -28,7 +29,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      z-index: -1; /* So elements on top can be visible */
+      z-index: -1;
     }
     .overlay-content {
       position: relative;
@@ -38,28 +39,100 @@
       transform: translateY(-50%);
     }
 
+    .overlay-content p {
+      margin: 0 20px;
+      padding: 0 10px;
+      font-size: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+      border-radius: 25px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      display: inline-block;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .taskbar {
+      height: 60px;
+      position: fixed;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* Align logo to left, buttons to right */
+      padding: 0 20px;
+    }
+
+    .logo {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .social-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-buttons button {
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .ig {
+      background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    }
+
+    .li {
+      background-color: #0A66C2;
+    }
+
     ::-webkit-scrollbar {
-        width: 5px;
-        background-color: #333;
+      width: 5px;
+      background-color: #333;
     }
 
     ::-webkit-scrollbar-thumb {
-        background-color: black;
-        border-radius: 10px;
+      background-color: black;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
   <div class="top">
+    <div class="taskbar">
+      <div class="logo">Wildan ©</div>
+      <div class="social-buttons">
+        <button class="fab fa-instagram ig" title="Instagram"></button>
+        <button class="fab fa-linkedin-in li" title="LinkedIn"></button>
+        <button class="fab fa-twitter" style="font-size: 30px; color: blue;"></button>
+      </div>
+    </div>
     <img src="70d.jpeg" alt="EOS 70D" class="cemg">
     
     <div class="overlay-content">
-      <h1>Wildna</h1>
-      <p>Photography is a way of feeling, of touching, of loving.</p>
+      <img src="artisclg.jpeg" alt="pfp" class="pfp" style="width: 170px; height: 170px; border-radius: 50%; border: 5px solid white;">
+      <br>
+      <h1 style="font-size: 2.8rem; padding-bottom: 15px;">Wildan</h1>
+      <p>I'm Wildan, a professional photographer known for mastering the art of budget gear</p>
     </div>
   </div>
 
-  <div>
+  <div style="height: 100vh; width: 100%; background-color: white;">
   </div>
 </body>
 </html>
