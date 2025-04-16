@@ -191,6 +191,64 @@
       background-color: black;
       border-radius: 10px;
     }
+
+
+    .services-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .services-section h1 {
+    font-size: clamp(1.8rem, 3vw, 3rem);
+    margin-bottom: 40px;
+  }
+
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .service-item {
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 30px 20px;
+    width: 250px;
+    min-height: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .service-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .service-item i {
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    color: #e63946;
+    margin-bottom: 15px;
+  }
+
+  .service-item h3 {
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    margin-bottom: 10px;
+    color: #222;
+  }
+
+  .service-item p {
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    color: #666;
+    line-height: 1.5;
+  }
+
+  @media screen and (max-width: 480px) {
+    .service-item {
+      width: 90%;
+    }
+  }
   </style>
 </head>
 <body>
@@ -206,7 +264,7 @@
 
   <div class="top">
     <div class="overlay-content">
-      <img src="artiscl.jpeg" alt="Profile Picture" />
+      <img src="artisclg.jpeg" alt="Profile Picture" />
       <h1>Wildan</h1>
       <p>I'm Wildan, a professional photographer known for mastering the art of budget gear</p>
     </div>
@@ -222,26 +280,47 @@
       </div>
 
       <div class="about-image">
-        <img src="artiscl.jpeg" alt="Wildan" class="pfp" />
+        <img src="artisclg.jpeg" alt="Wildan" class="pfp" />
       </div>
     </div>
   </div>
 
-    <div style="height: 100vh; max-width: 1200px; text-align: center; padding: 60px 20px; margin: auto;">
-      <h1>Our Services</h1>
-      
+  <div class="services-section">
+    <h1>My Services</h1>
+    <div class="services">
+      <div class="service-item">
+        <i class="fas fa-camera-retro"></i>
+        <h3>Photography</h3>
+        <p>Capturing stunning visuals with creativity and budget-friendly gear.</p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-video"></i>
+        <h3>Videography</h3>
+        <p>High-quality videos with cinematic storytelling and smooth editing.</p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-image"></i>
+        <h3>Photo Editing</h3>
+        <p>Professional touch-ups, color correction, and style enhancements.</p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-film"></i>
+        <h3>Video Editing</h3>
+        <p>Bringing stories to life with precise cuts, music, and transitions.</p>
+      </div>
     </div>
+  </div>
 
     <div class="portfolio">
         <h2>My Portfolio</h2>
         <div class="portfolio-items">
-            <img src="portoim/tr1.jpeg" alt="train-images">
-            <img src="portoim/tr2.jpeg" alt="train-images">
-            <img src="portoim/tr3.jpeg" alt="train-images">
-            <img src="portoim/tr4.jpeg" alt="train-images">
-            <img src="portoim/tr5.jpeg" alt="train-images">
-            <img src="portoim/tr6.jpeg" alt="train-images">
-            <img src="portoim/tr7.jpeg" alt="train-images">
+            <img src="portoimg/tr1.jpeg" alt="train-images">
+            <img src="portoimg/tr2.jpeg" alt="train-images">
+            <img src="portoimg/tr3.jpeg" alt="train-images">
+            <img src="portoimg/tr4.jpeg" alt="train-images">
+            <img src="portoimg/tr5.jpeg" alt="train-images">
+            <img src="portoimg/tr6.jpeg" alt="train-images">
+            <img src="portoimg/tr7.jpeg" alt="train-images">
         </div>
     </div>
 </body>
