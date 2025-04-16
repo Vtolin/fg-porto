@@ -18,6 +18,17 @@
       scroll-behavior: smooth;
     }
 
+    body {
+      padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    }
+
+    .wrapper {
+      max-width: 1440px;
+      margin: auto;
+      width: 100%;
+    }
+
+
     .taskbar {
       position: fixed;
       top: 0;
@@ -96,7 +107,7 @@
       display: inline-block;
     }
 
-    .about-me {
+.about-me {
   background-color: #f9f9f9;
   padding: 100px 40px;
   display: flex;
@@ -193,7 +204,7 @@
     }
 
 
-    .services-section {
+  .services-section {
     padding: 60px 20px;
     max-width: 1200px;
     margin: auto;
@@ -244,14 +255,75 @@
     line-height: 1.5;
   }
 
+.footer {
+  background-color: #191919;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #ff7a7a;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-credit p, .footer-bottom p {
+  font-size: 0.95rem;
+  color: #bbb;
+}
+
+.footer-credit a {
+  color: #00f2ff;
+  text-decoration: none;
+}
+
+.footer-credit a:hover {
+  text-decoration: underline;
+}
+
   @media screen and (max-width: 480px) {
     .service-item {
       width: 90%;
     }
   }
+
+@media screen and (min-aspect-ratio: 3/2) {
+  .portfolio-items img {
+    width: clamp(200px, 15vw, 280px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-me-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
   </style>
 </head>
 <body>
+<div class="wrapper">
 
   <div class="taskbar">
     <div class="logo">Wildan ©</div>
@@ -314,14 +386,37 @@
     <div class="portfolio">
         <h2>My Portfolio</h2>
         <div class="portfolio-items">
-            <img src="portoimg/tr1.jpeg" alt="train-images">
-            <img src="portoimg/tr2.jpeg" alt="train-images">
-            <img src="portoimg/tr3.jpeg" alt="train-images">
-            <img src="portoimg/tr4.jpeg" alt="train-images">
-            <img src="portoimg/tr5.jpeg" alt="train-images">
-            <img src="portoimg/tr6.jpeg" alt="train-images">
-            <img src="portoimg/tr7.jpeg" alt="train-images">
+            <img src="portoim/tr1.jpeg" alt="train-images">
+            <img src="portoim/tr2.jpeg" alt="train-images">
+            <img src="portoim/tr3.jpeg" alt="train-images">
+            <img src="portoim/tr4.jpeg" alt="train-images">
+            <img src="portoim/tr5.jpeg" alt="train-images">
+            <img src="portoim/tr6.jpeg" alt="train-images">
+            <img src="portoim/tr7.jpeg" alt="train-images">
         </div>
     </div>
+
+    <div class="footer">
+
+      <div class="footer-container">
+        <div class="footer-links">
+          <a href="#top">Back to Top</a>
+          <a href="mailto:hafidzywildan@gmail.com">Contact</a>
+          <a href="https://www.instagram.com/manpixel9proxl/" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com/in/wildan-hafidzy-303433360" target="_blank">LinkedIn</a>
+        </div>
+    
+        <div class="footer-credit">
+          <p>Crafted with passion by <a href="https://www.instagram.com/manx100ultra/">R</a> for Wildan</p>
+        </div>
+    
+        <div class="footer-bottom">
+          <p>© 2025 Wildan — All Rights Reserved</p>
+        </div>
+      </div>
+
+    </div>
+  
+  </div>
 </body>
 </html>
